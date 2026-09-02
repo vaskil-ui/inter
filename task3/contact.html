@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Field Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="shell masthead-row">
+    <div class="wordmark">Field Notes<span>.</span></div>
+    <nav class="primary">
+      <a href="index.html">Home</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="submissions.html">Submissions</a>
+    </nav>
+  </div>
+</header>
+
+<main class="shell">
+  <h1>Send a note</h1>
+  <p class="lede">Every field is required. Once it validates, it's saved to this browser's LocalStorage — nothing leaves your device.</p>
+
+  <form class="card" id="contactForm" novalidate>
+    <div class="field" id="nameField">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" autocomplete="name">
+      <div class="msg" id="nameMsg"></div>
+    </div>
+
+    <div class="field" id="emailField">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+      <div class="msg" id="emailMsg"></div>
+    </div>
+
+    <div class="field" id="messageField">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+      <div class="msg" id="messageMsg"></div>
+    </div>
+
+    <div class="submit-row">
+      <button class="button" type="submit">Save message</button>
+      <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+</main>
+
+<footer class="shell">
+  Full Stack Web Development Internship — Task 3, Maincrafts Technology.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
