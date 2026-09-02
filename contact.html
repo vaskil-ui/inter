@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Almanac Print Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Almanac <span>Print Co.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" style="padding-bottom: 0;">
+      <p class="hero-eyebrow">Get in touch</p>
+      <h1 style="max-width: 16ch;">Tell us what you're printing.</h1>
+    </section>
+
+    <section class="section container">
+      <div class="contact-grid">
+        <form name="contactForm" onsubmit="return validateForm()" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about the project — timeline, quantity, occasion."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note">Name and email are required. We reply to every inquiry within two business days.</p>
+        </form>
+
+        <div>
+          <div class="info-block">
+            <h3>Studio</h3>
+            <p>412 Kiln Street, Unit 3<br />Portland, OR 97214</p>
+          </div>
+          <div class="info-block">
+            <h3>Hours</h3>
+            <p>Tuesday–Friday, 10am–5pm<br />Saturday by appointment</p>
+          </div>
+          <div class="info-block">
+            <h3>Email</h3>
+            <p>hello@almanacprint.co</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-row">
+      <span>© 2026 Almanac Print Co.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
